@@ -1,7 +1,7 @@
 
 README
 ===========================
-Compare the advantages and disadvantages of the following USB to TTL converters.
+Compare the advantages and disadvantages of the popular USB to TTL converters.
 
 ****
 
@@ -37,6 +37,7 @@ Compare the advantages and disadvantages of the following USB to TTL converters.
 | CP210x |
 | CH340G | 75, 110, 134, 150, *, 128000,
 | PL2303 | 75, 110, 134, 150, *, 128000, [DCHU][PL_DCHU] only
+
 [FT_BAUD]:http://www.ftdichip.com/Support/Documents/AppNotes/AN_120_Aliasing_VCP_Baud_Rates.pdf
 [PL_DCHU]:http://www.prolific.com.tw/UserFiles/files/PL2303-W10RS3RS4-DCHU-DriverSetup_v1192_20180503.zip
 \* = 300, 600, 1200, 1800, 2400, 4800, 7200, 9600, 14400, 19200, 38400, 57600, 115200
