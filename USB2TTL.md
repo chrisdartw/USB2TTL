@@ -8,13 +8,13 @@ Compare the advantages and disadvantages of the popular USB to TTL converters.
 # Index
 - [README](#readme)
 - [Index](#index)
-    - [Driver & Hardware ID](#driver--hardware-id)
-    - [Baud](#baud)
-    - [Loopback tester utility](#loopback-tester-utility)
+- [Driver & Hardware ID](#driver--hardware-id)
+- [Baud](#baud)
+- [Loopback tester utility](#loopback-tester-utility)
 
 ****
 
-### Driver & Hardware ID
+# Driver & Hardware ID
 | Device | Driver & Hardware ID
 |--------|---------------
 | FT232R | [DL][DL_FT] USB\VID_0403&PID_6001&REV_0400
@@ -26,11 +26,12 @@ Compare the advantages and disadvantages of the popular USB to TTL converters.
 [DL_CP]: http://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip
 [DL_CH]: http://www.wch.cn/downloads/file/5.html
 [DL_PL]: http://www.prolific.com.tw/UserFiles/files/PL2303_Prolific_DriverInstaller_v1200.zip
-[OLD]:   http://www.auelectronics.com/downloads/PL2303_HXA_Driver_V10518.zip
+[OLD]:   http://akizukidenshi.com/download/PL2303_Prolific_DriverInstaller_v1417.zip
+[OLD0]:  http://web.archive.org/web/20120201222623/http://www.prolific.com.tw/support/files//IO%20Cable/PL-2303/Drivers%20-%20Generic/Windows/allinone/PL2303_Prolific_DriverInstaller_v1417.zip
 
 ****
 
-### Baud
+# Baud
 | Device | Baud
 |--------|--------
 | FT232R |                    *        , 230400, 460800, 921600, [Spec][FT_BAUD]
@@ -44,7 +45,7 @@ Compare the advantages and disadvantages of the popular USB to TTL converters.
 
 ****
 
-### Loopback tester utility
+# Loopback tester utility
 * http://web.archive.org/web/20120304112647/http://www.madsencircuits.com/serial_loopback/SerialLoopbackTestSetup_110.exe
 * http://www.uwe-sieber.de/files/com_name_arbiter_setter.zip
 * http://www.oneping.com.tw/downlaod/ap/RapidTest.zip
