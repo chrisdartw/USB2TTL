@@ -5,53 +5,60 @@ Compare the advantages and disadvantages of the popular USB to TTL converters.
 
 ****
 
-# Index
+## Index
 - [README](#readme)
-- [Index](#index)
-- [Driver & Hardware ID](#driver--hardware-id)
-- [Baud](#baud)
-- [Loopback tester utility](#loopback-tester-utility)
+	- [Index](#index)
+	- [Driver & Hardware ID](#driver--hardware-id)
+	- [Baud](#baud)
+	- [Loopback test utility](#loopback-test-utility)
+	- [Miscellaneous information](#miscellaneous-information)
 
 ****
 
-# Driver & Hardware ID
-| Device | Driver & Hardware ID
-|--------|---------------
-| FT232R | [DL][DL_FT] USB\VID_0403&PID_6001&REV_0400
-| CP210x | [DL][DL_CP]
-| CH340G | [DL][DL_CH] USB\VID_1A86&PID_7523&REV_0254
-| PL2303 | [DL][DL_PL] USB\VID_067B&PID_2303&REV_0400, REV_0300 for [Old][OLD]
+## Driver & Hardware ID
+| Device |   Driver    | Hardware ID
+|-------:|:-----------:|-------
+| FT232R | [DL][DL_FT] | USB\VID_0403&PID_6001&REV_0400
+| CP2102 | [DL][DL_CP] |
+| CH340G | [DL][DL_CH] | USB\VID_1A86&PID_7523&REV_0254
+| PL2303 | [DL][DL_PL] | USB\VID_067B&PID_2303&REV_0400, REV_0300 for [Old][OLD]
 
 [DL_FT]: http://www.ftdichip.com/Drivers/CDM/CDM%20v2.12.28%20WHQL%20Certified.zip
-[DL_CP]: http://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip
+[DL_CP]: http://www.silabs.com/documents/public/software/CP2102_Universal_Windows_Driver.zip
 [DL_CH]: http://www.wch.cn/downloads/file/5.html
 [DL_PL]: http://www.prolific.com.tw/UserFiles/files/PL2303_Prolific_DriverInstaller_v1200.zip
-[OLD]:   http://akizukidenshi.com/download/PL2303_Prolific_DriverInstaller_v1417.zip
-[OLD0]:  http://web.archive.org/web/20120201222623/http://www.prolific.com.tw/support/files//IO%20Cable/PL-2303/Drivers%20-%20Generic/Windows/allinone/PL2303_Prolific_DriverInstaller_v1417.zip
+[OLD]:   http://fen.home.pl/pub/sterowniki/Unitek/Y-105/PL2303_Prolific_DriverInstaller_v1417.zip
+[ORG]:   http://web.archive.org/web/20120201222623/http://www.prolific.com.tw/support/files//IO%20Cable/PL-2303/Drivers%20-%20Generic/Windows/allinone/PL2303_Prolific_DriverInstaller_v1417.zip
 
 ****
 
-# Baud
-| Device | Baud
-|--------|--------
-| FT232R |                    *        , 230400, 460800, 921600, [Spec][FT_BAUD]
-| CP210x |
-| CH340G | 75, 110, 134, 150, *, 128000,
-| PL2303 | 75, 110, 134, 150, *, 128000, [DCHU][PL_DCHU] only
+## Baud
+| Device |  Datasheet  | Buffer  R/T | Baud
+|-------:|:-----------:|:-----------:|--------
+| FT232R | [DL][DS_FT] |  128 / 256  | 300 bps to 3 Mbps
+| CP2102 | [DL][DS_CP] |  576 / 640  | 300 bps to 1 Mbps
+| CH340G | [DL][DS_CH] |      /      |  50 bps to 2 Mbps
+| PL2303 | [DL][DS_PL] |  256 / 256  |  75 bps to 6 Mbps
 
-[FT_BAUD]:http://www.ftdichip.com/Support/Documents/AppNotes/AN_120_Aliasing_VCP_Baud_Rates.pdf
-[PL_DCHU]:http://www.prolific.com.tw/UserFiles/files/PL2303-W10RS3RS4-DCHU-DriverSetup_v1192_20180503.zip
-\* = 300, 600, 1200, 1800, 2400, 4800, 7200, 9600, 14400, 19200, 38400, 57600, 115200
+[DS_FT]: https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf
+[DS_CP]: https://www.silabs.com/documents/public/data-sheets/CP2102-9.pdf
+[DS_CH]: http://wch-ic.com/downfile/79
+[DS_PL]: http://www.mpja.com/download/pl2303hxreva_v1.6.pdf
 
 ****
 
-# Loopback tester utility
-* http://web.archive.org/web/20120304112647/http://www.madsencircuits.com/serial_loopback/SerialLoopbackTestSetup_110.exe
+## Loopback test utility
+* http://www.sudt.com/download/AccessPort137.zip
 * http://www.uwe-sieber.de/files/com_name_arbiter_setter.zip
 * http://www.oneping.com.tw/downlaod/ap/RapidTest.zip
 * http://www.oneping.com.tw/downlaod/ap/CableTest2305.zip
 * http://www.passmark.com/downloads/bitpro8_1_1025.exe
 * http://www.passmark.com/downloads/bitstd8_1_1025.exe
+* http://web.archive.org/web/20120304112647/http://www.madsencircuits.com/serial_loopback/SerialLoopbackTestSetup_110.exe
+
+****
+
+## Miscellaneous information
 ```
 -----START_OF_KEY-----
 Larissa Bendel
