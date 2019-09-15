@@ -69,26 +69,3 @@ Larissa Bendel
 YC4G55MSGFZFHXPWIHSSA4N93DB9RNAATEVZDP5D
 ------END_OF_KEY------
 ```
-```
-private void SeriaLoopbackForm_Load(object sender, EventArgs e)
-{
-    // ...
-	int num = 2400;
-	int num2 = 0;
-	if (int.TryParse(Interaction.InputBox(string.Format("Please enter the new Baud : (>= {0})", num), "New Baud", Conversions.ToString(this.SP.BaudRate), -1, -1), out num2))
-	{
-		this.SP.BaudRate = ((num2 < num) ? num : num2);
-	}
-	else
-	{
-		this.SP.BaudRate = 115200;
-	}
-	for (int i = 0; i < this.baudRate.Length; i++)
-	{
-		this.baudRate[i] = this.SP.BaudRate;
-	}
-	// ...
-}
-```
-
-****
