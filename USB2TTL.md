@@ -40,10 +40,12 @@ Compare the advantages and disadvantages of the popular USB to TTL converters.
 | CH340G | [DL][DS_CH] |      /      |  50 bps to 2 Mbps
 | PL2303 | [DL][DS_PL] |  256 / 256  |  75 bps to 6 Mbps
 
-[DS_FT]: https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf
-[DS_CP]: https://www.silabs.com/documents/public/data-sheets/CP2102-9.pdf
+[DS_FT]: http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf
+[DS_CP]: http://www.silabs.com/documents/public/data-sheets/CP2102-9.pdf
 [DS_CH]: http://wch-ic.com/downfile/79
 [DS_PL]: http://www.mpja.com/download/pl2303hxreva_v1.6.pdf
+[DS_TI]: http://www.ti.com/lit/ds/symlink/max3232.pdf
+[DS_SP]: http://www.maxlinear.com/ds/sp3222e_sp3232e.pdf
 
 ****
 
