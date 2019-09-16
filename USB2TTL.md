@@ -24,7 +24,7 @@ Compare the advantages and disadvantages of the popular USB to TTL converters.
 | PL2303 | [DL][DL_PL] | USB\VID_067B&PID_2303&REV_0400, REV_0300 for [Old][OLD]
 
 [DL_FT]: http://www.ftdichip.com/Drivers/CDM/CDM%20v2.12.28%20WHQL%20Certified.zip
-[DL_CP]: http://www.silabs.com/documents/public/software/CP2102_Universal_Windows_Driver.zip
+[DL_CP]: http://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip
 [DL_CH]: http://www.wch.cn/downloads/file/5.html
 [DL_PL]: http://www.prolific.com.tw/UserFiles/files/PL2303_Prolific_DriverInstaller_v1200.zip
 [OLD]:   http://fen.home.pl/pub/sterowniki/Unitek/Y-105/PL2303_Prolific_DriverInstaller_v1417.zip
